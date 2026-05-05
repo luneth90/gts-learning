@@ -32,9 +32,9 @@ RGB-D / scene
 
 ```python
 Geometry = {
-    "cup_centroid":     (0.0, 0.15, 0.8),   # 杯底在桌面高度
-    "table_plane":      (0, 0, 1, -0.8),    # 桌面平面法向+偏移
-    "cup_bottom_z":     0.80,                # 杯底 Z 与桌面 Z 一致
+    "cup_centroid":     (0.0, 0.15, 0.85),  # 杯体质心（杯高约 0.1，半径约 0.04）
+    "table_plane":      (0, 0, 1, -0.8),    # 平面方程 0x+0y+1z-0.8=0，即桌面高度 z=0.8
+    "cup_bottom_z":     0.80,                # 杯底高度（= 桌面高度，坐在桌面上）
 }
 Topology = {
     "support(cup, table)": True,             # ← 支撑成立
